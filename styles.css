@@ -14,6 +14,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--header-height);
@@ -185,6 +189,7 @@ section:first-of-type {
   color: #fff;
   position: relative;
   overflow: hidden;
+  overflow-x: hidden;
 }
 .hero-container {
   max-width: 1400px;
@@ -374,6 +379,7 @@ section:first-of-type {
 .about-givaldo {
   background: var(--color-primary); /* Fundo escuro */
   color: #f0f0f0; /* Cor do texto principal (claro) */
+  overflow-x: hidden;
 }
 .about-givaldo .section-title,
 .about-givaldo h2 {
@@ -534,6 +540,7 @@ section:first-of-type {
 .contact {
   background: linear-gradient(180deg, #051a3a 0%, #051a3a 100%);
   color: #fff;
+  overflow-x: hidden;
 }
 .contact-content {
   display: grid;
@@ -563,7 +570,7 @@ section:first-of-type {
 
 .contact-method {
   display: grid;
-  grid-template-columns: 110px 1fr; 
+  grid-template-columns: 110px 1fr;
   align-items: center;
   gap: 0.8rem;
   padding: 1rem;
@@ -940,6 +947,14 @@ body.no-scroll {
   .about-photo-wrapper {
     height: 320px; /* Redução adicional na altura da foto */
     max-width: 320px;
+  }
+
+  .contact-method {
+    /* Muda o grid de 2 colunas (desktop) para 1 coluna (mobile) */
+    grid-template-columns: 1fr;
+    /* Reduz o gap para um espaçamento vertical entre o rótulo e o valor */
+    gap: 0.25rem;
+    align-items: flex-start; /* Alinha o texto ao início */
   }
 
   /* Contato */
