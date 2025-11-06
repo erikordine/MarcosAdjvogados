@@ -10,7 +10,7 @@ const defaultConfig = {
   phone_number: "+5511988175273",
   email_address: "contato@marquesaraujo.adv.br",
   primary_color: "#051A3A",
-  surface_color: "#E7F6FF",
+  surface_color: "#ffffff",
   text_color: "#333333",
   font_family: "Playfair Display",
   font_size: 16,

@@ -1,7 +1,6 @@
 :root {
   --color-primary: #051a3a;
   --color-bg: #ffffff;
-  --color-surface: #e7f6ff;
   --color-text: #333333;
   --color-heading: #051a3a;
   --color-border: #ededed;
@@ -447,49 +446,6 @@ section:first-of-type {
   display: none;
 }
 
-/* --- DEPOIMENTOS (CORRIGIDO) --- */
-
-.testimonials {
-  background: var(--color-surface);
-}
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-}
-.testimonial-card {
-  background: #fff;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  padding: 2rem;
-  box-shadow: var(--shadow);
-  transition: 0.25s;
-  /* ADICIONADO: Alinha estrelas, texto e autor verticalmente */
-  display: flex;
-  flex-direction: column;
-}
-.testimonial-card:hover {
-  transform: translateY(-4px);
-}
-.testimonial-rating {
-  margin-bottom: 1rem;
-  color: #ffc107;
-  font-size: 1.1rem;
-  display: flex;
-  gap: 0.2rem;
-}
-.testimonial-text {
-  color: #4a4a4a;
-  margin-top: 0.6rem;
-  /* ADICIONADO: Garante que o autor fique sempre no final do card */
-  flex-grow: 1;
-}
-.testimonial-author {
-  font-weight: 700;
-  color: var(--color-heading);
-  margin-top: 1.2rem;
-}
-
 /* --- FAQ --- */
 
 .faq-container {
@@ -526,7 +482,7 @@ section:first-of-type {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease;
-  background: #f7fbff;
+  background: var(--color-bg);
 }
 .faq-answer.active {
   padding: 1.2rem 1.4rem;
