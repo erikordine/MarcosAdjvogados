@@ -340,7 +340,7 @@ section:first-of-type {
 /* --- ÁREAS --- */
 
 .areas {
-  background: var(--color-big);
+  background: var(--color-bg);
 }
 .areas-grid {
   display: grid;
