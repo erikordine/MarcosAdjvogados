@@ -703,6 +703,37 @@ body.no-scroll {
 /* MEDIA QUERIES OTIMIZADAS */
 /* ======================================================= */
 
+/* Espaçamento extra no CTA do hero em telas grandes */
+@media (min-width: 1600px) {
+  /* um pouco mais de respiro geral no bloco */
+  .hero { 
+    padding-top: calc(var(--header-height) + 32px);
+    padding-bottom: 72px;
+  }
+
+  /* aumenta o vão entre texto/CTA/imagem */
+  .hero-container { gap: 6rem; }
+
+  /* respiro específico acima e abaixo do(s) botão(ões) */
+  .hero-buttons { 
+    margin-block: 2.4rem 2.6rem; /* topo | base */
+  }
+
+  /* se houver apenas um botão, garante o mesmo respiro */
+  .hero .btn-primary,
+  .hero .btn-secondary {
+    margin-block: 0; /* evita somar margens dos botões */
+  }
+}
+
+/* Telas muito amplas (≥1920px): um tiquinho a mais */
+@media (min-width: 1920px) {
+  .hero-buttons { 
+    margin-block: 2.8rem 3rem;
+  }
+}
+
+
 /* Breakpoint para Tablet Landscape e Desktop menor */
 @media (max-width: 1024px) {
   /* Hero */
